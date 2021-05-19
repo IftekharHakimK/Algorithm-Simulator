@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="900.0" pickOnBounds="true">
+         <image>
+            <Image url="@chalkboard.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="146.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IFTEKHAR HAKIM KAOWSAR" wrappingWidth="208.6708984375" />
+      <Text layoutX="146.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ROLL:1705045" />
+      <Text layoutX="516.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MONIRUL HAQ IMON" />
+      <Text layoutX="516.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ROLL:1705054" />
+   </children>
+</Pane>

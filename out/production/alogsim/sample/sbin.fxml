@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BinsearchController">
+    <children>
+        <Pane layoutY="-2.0" prefHeight="800.0" prefWidth="900.0">
+            <children>
+            <ImageView fitHeight="821.0" fitWidth="900.0" pickOnBounds="true">
+               <image>
+                  <Image url="@chalkboard.jpg" />
+               </image></ImageView>
+                <Label fx:id="label1" layoutX="315.0" layoutY="78.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="67.0" prefWidth="245.0" text="Binary Search" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe Script" size="31.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="T" focusTraversable="false" layoutX="437.0" layoutY="190.0" prefHeight="8.0" prefWidth="258.0" promptText="Length of Array(&lt;=8)">
+               <font>
+                  <Font name="Segoe Script" size="15.0" />
+               </font></TextField>
+                <Button fx:id="next" layoutX="712.0" layoutY="190.0" mnemonicParsing="false" onAction="#handle" prefHeight="39.0" prefWidth="77.0" text="Submit" />
+            <Text fill="WHITE" layoutX="103.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENTER LENGTH OF ARRAY :" wrappingWidth="321.6708984375">
+               <font>
+                  <Font name="Segoe Script" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="alert_for_size" fill="#d02b2b" layoutX="450.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="! Length must be &lt;=8" visible="false" wrappingWidth="218.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="a0" fill="WHITE" layoutX="255.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Array[0]:" visible="false" wrappingWidth="116.3857421875">
+               <font>
+                  <Font name="Segoe Script" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="t0" focusTraversable="false" layoutX="372.0" layoutY="301.0" prefHeight="31.0" prefWidth="98.0" visible="false" />
+            <Text fx:id="a1" fill="WHITE" layoutX="255.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Array[1]:" visible="false" wrappingWidth="116.3857421875">
+               <font>
+                  <Font name="Segoe Script" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="a2" fill="WHITE" layoutX="255.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Array[2]:" visible="false" wrappingWidth="116.3857421875">
+               <font>
+                  <Font name="Segoe Script" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="a3" fill="WHITE" layoutX="255.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Array[3]:" visible="false" wrappingWidth="116.3857421875">
+               <font>
+                  <Font name="Segoe Script" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="a4" fill="WHITE" layoutX="255.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Array[4]:" visible="false" wrappingWidth="116.3857421875">
+               <font>
+                  <Font name="Segoe Script" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="a5" fill="WHITE" layoutX="255.0" layoutY="531.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Array[5]:" visible="false" wrappingWidth="116.3857421875">
+               <font>
+                  <Font name="Segoe Script" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="a6" fill="WHITE" layoutX="255.0" layoutY="574.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Array[6]:" visible="false" wrappingWidth="116.3857421875">
+               <font>
+                  <Font name="Segoe Script" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="a7" fill="WHITE" layoutX="255.0" layoutY="619.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Array[7]:" visible="false" wrappingWidth="116.3857421875">
+               <font>
+                  <Font name="Segoe Script" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="t1" focusTraversable="false" layoutX="372.0" layoutY="341.0" prefHeight="31.0" prefWidth="98.0" visible="false" />
+            <TextField fx:id="t2" focusTraversable="false" layoutX="372.0" layoutY="385.0" prefHeight="31.0" prefWidth="98.0" visible="false" />
+            <TextField fx:id="t3" focusTraversable="false" layoutX="372.0" layoutY="427.0" prefHeight="31.0" prefWidth="98.0" visible="false" />
+            <TextField fx:id="t4" focusTraversable="false" layoutX="371.0" layoutY="468.0" prefHeight="31.0" prefWidth="98.0" visible="false" />
+            <TextField fx:id="t5" focusTraversable="false" layoutX="371.0" layoutY="510.0" prefHeight="31.0" prefWidth="98.0" visible="false" />
+            <TextField fx:id="t6" focusTraversable="false" layoutX="371.0" layoutY="553.0" prefHeight="31.0" prefWidth="98.0" visible="false" />
+            <TextField fx:id="t7" focusTraversable="false" layoutX="371.0" layoutY="598.0" prefHeight="31.0" prefWidth="98.0" visible="false" />
+            <Button fx:id="a_submit" layoutX="645.0" layoutY="401.0" mnemonicParsing="false" onAction="#handle" style="-fx-max-height: 100; -fx-max-width: 100; -fx-min-height: 100; -fx-min-width: 100; -fx-background-radius: 100;" text="Submit" visible="false" />
+            <Text fx:id="alert_for_field" fill="RED" layoutX="371.0" layoutY="671.0" strokeType="OUTSIDE" strokeWidth="0.0" text="! Fill all field " visible="false" wrappingWidth="245.0">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+            <Text fx:id="as" fill="WHITE" layoutX="155.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number to search:" visible="false" wrappingWidth="200.0">
+               <font>
+                  <Font name="Segoe Script" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ts" focusTraversable="false" layoutX="371.0" layoutY="261.0" prefHeight="31.0" prefWidth="98.0" visible="false" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

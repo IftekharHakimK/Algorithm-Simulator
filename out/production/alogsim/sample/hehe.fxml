@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.bfsController">
+   <children>
+      <Button fx:id="edge" layoutX="410.0" layoutY="669.0" mnemonicParsing="false" text="Add edge" />
+      <TextField fx:id="textField" layoutX="462.0" layoutY="587.0" visible="false" />
+      <Text fx:id="text" layoutX="291.0" layoutY="610.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENTER ROOT :" visible="false" wrappingWidth="148.49853515625">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="alert" fill="#ae1111" layoutX="462.0" layoutY="649.0" strokeType="OUTSIDE" strokeWidth="0.0" text="! Root not found" visible="false" />
+   </children>
+</Pane>

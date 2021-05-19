@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+      <ImageView fitHeight="800.0" fitWidth="900.0" pickOnBounds="true">
+         <image>
+            <Image url="@picker.jpg" />
+         </image>
+      </ImageView>
+        <Button fx:id="bubblesort" layoutX="65.0" layoutY="457.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#option1" prefHeight="40.0" prefWidth="100.0" stylesheets="@gol.css" text="Bubble Sort" />
+        <Button fx:id="mergesort" layoutX="359.0" layoutY="393.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#option2" prefHeight="40.0" prefWidth="100.0" stylesheets="@gol.css" text="Merge Sort" />
+        <Button fx:id="bs" layoutX="703.0" layoutY="443.0" maxWidth="126.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#option3" prefHeight="100.0" prefWidth="126.0" style="-fx-font-size: 13;" stylesheets="@gol.css" text="Binary Search" />
+        <Button fx:id="bfs" layoutX="534.0" layoutY="521.0" minHeight="80.0" minWidth="74.0" mnemonicParsing="false" onAction="#option4" prefHeight="80.0" prefWidth="74.0" stylesheets="@gol.css" text="BFS" />
+      <Button fx:id="back" layoutX="34.0" layoutY="40.0" mnemonicParsing="false" onAction="#backClicked" style="-fx-background-color: #5b1414; -fx-text-fill: #ffffff;" styleClass="lol" text="Go Back" />
+    </children>
+</Pane>

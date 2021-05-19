@@ -1,0 +1,19 @@
+.button
+{
+    -fx-background-radius: 100px;
+    -fx-max-width: 100px;
+    -fx-max-height: 100px;
+    -fx-min-width: 100px;
+    -fx-min-height: 100px;
+    -fx-background-color: linear-gradient(#ff5400, #be1d00);
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #2196f3;
+    -fx-background-radius: 105px;
+    -fx-max-width: 105px;
+    -fx-max-height: 105px;
+    -fx-min-width: 105px;
+    -fx-min-height: 105px;
+}

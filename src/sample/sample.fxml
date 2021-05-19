@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" stylesheets="@resources/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+      <ImageView fitHeight="700.0" fitWidth="900.0" pickOnBounds="true">
+         <image>
+            <Image url="@back.jpeg" />
+         </image>
+      </ImageView>
+        <Button fx:id="start" layoutX="334.0" layoutY="180.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#startclicked" prefHeight="50.0" prefWidth="200.0" text="Start Simulation">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <Button fx:id="credit" layoutX="334.0" layoutY="256.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#creditClicked" prefHeight="50.0" prefWidth="200.0" text="Credit" />
+        <Button fx:id="exit" layoutX="334.0" layoutY="336.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exitClicked" prefHeight="50.0" prefWidth="200.0" text="Exit" />
+        <Text fx:id="sim" layoutX="154.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Algorithm Simulator" textAlignment="JUSTIFY" wrappingWidth="591.0849609375">
+            <font>
+                <Font size="63.0" />
+            </font>
+         <effect>
+            <DropShadow color="RED" />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.9368932038834952" startY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+        </Text>
+    </children>
+</Pane>
